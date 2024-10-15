@@ -4,8 +4,8 @@
 #include <Servo.h>
 
 // Firebase configuration
-#define _SSID "Pixel 7a"            // Your WiFi SSID
-#define _PASSWORD "87654321"        // Your WiFi Password
+#define _SSID "bhavik's S22"            // Your WiFi SSID
+#define _PASSWORD "88887777"        // Your WiFi Password
 #define REFERENCE_URL "https://gas-detection-iot-default-rtdb.firebaseio.com"  // Your Firebase project reference URL
 
 // DHT sensor configuration
@@ -95,7 +95,7 @@ void loop() {
   // Check gas level and take action if it exceeds the threshold
   if (gasValue >= GAS_THRESHOLD) {
     // Activate buzzer and fan
-    tone(BUZZER_PIN, 3000);  // Send 1 kHz tone signal to buzzer
+    tone(BUZZER_PIN, 3000);  // Send 3 kHz tone signal to buzzer
     digitalWrite(FAN_PIN, HIGH);
     
     // Rotate servo motor to close gas regulator
@@ -112,7 +112,5 @@ void loop() {
     
     Serial.println("Gas level normal.");
   }
-
-  // Delay to avoid flooding Firebase with updates
   delay(1000); // Update every 1 second
 }
