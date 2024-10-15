@@ -13,8 +13,8 @@ Here’s a breakdown of the code:
   
 - **Wi-Fi Configuration:**
   ```cpp
-  #define _SSID "Pixel 7a"            // Your WiFi SSID
-  #define _PASSWORD "87654321"        // Your WiFi Password
+  #define _SSID "bhavik's S22"            // Your WiFi SSID
+  #define _PASSWORD "88887777"        // Your WiFi Password
   ```
   These lines define the Wi-Fi network's SSID and password for connecting the ESP8266 to the internet.
 
